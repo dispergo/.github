@@ -16,7 +16,8 @@ approach.
   stream from an upstream Dispergo node on LL-HLS or WHEP viewer demand.
 - **Deliver live:** serve HLS and LL-HLS, offer WebRTC playback through WHEP, or
   publish and relay Media over QUIC (MoQT) over native QUIC and WebTransport for
-  supported client profiles.
+  supported client profiles. The default MoQT profile offers IETF transport
+  drafts 21 and 20; selecting the `moqt-22` profile also enables draft 22.
 - **Repair and normalize:** use optional, bounded CPU or GPU workers for
   compatibility repair or a configured H.264 target. Automatic mode preserves
   passthrough for matching inputs.
